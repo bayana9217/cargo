@@ -1,0 +1,1032 @@
+@charset "UTF-8";
+
+/* Обнуляющий стиль */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol li,
+ul li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+  font-family: 'Roboto';
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__top {
+  background-color: #C8A35F;
+}
+
+.header__top-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 45px;
+}
+
+.header__lang {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+}
+
+.header__lang-link {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0px 10px 0px 0px;
+  opacity: 0.5;
+}
+
+.header__lang-link:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.header__lang-link:hover {
+  opacity: 1;
+}
+
+.header__tel {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__tel-link {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.header__tel-link:hover {
+  text-decoration: underline;
+}
+
+.header__email {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__email-link {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.header__email-link:hover {
+  text-decoration: underline;
+}
+
+.header__bottom {
+  background-color: #2F343A;
+}
+
+.header__bottom-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.header__logo img {
+  border-right: 1px solid #ffffff;
+  padding: 0px 30px 0px 0px;
+  margin: 0px 30px 0px 0px;
+}
+
+.header__offices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.5px;
+  background: url("../img/icons/placeholder.svg") left no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+
+.header__offices:hover {
+  text-decoration: underline;
+}
+
+.header__menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__list li {
+  margin: 0px 30px 0px 0px;
+}
+
+.header__list li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.header__list li:hover {
+  text-decoration: underline;
+}
+
+.header__link {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.home {
+  padding: 145px 0px 0px 0px;
+}
+
+._no-webp .home__item{
+  background: url("../img/home_bg.png") 50% no-repeat; }
+
+.home__item {
+  min-height: 620px;
+}
+
+.home__container {
+  position: relative;
+}
+
+.home__border {
+  border: 1px solid #C8A35F;
+  min-height: 245px;
+  max-width: 920px;
+  position: absolute;
+  top: 155px;
+  left: 105px;
+  padding: 45px 70px;
+  margin: 0px 90px 0px 0px;
+}
+
+.home__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.home__title {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+}
+
+.home__text {
+  max-width: 770px;
+  text-align: center;
+}
+
+.cargo-europe__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.cargo-europe__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #393F47;
+  width: 35%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.cargo-europe__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #393F47;
+  width: 35%;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.cargo-europe__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 561px;
+}
+
+.cargo-europe__detailed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.cargo-europe__subtitle {
+  max-width: 400px;
+  margin: 0px 0px 30px 0px;
+}
+
+.cargo-europe__text {
+  max-width: 300px;
+  margin: 0px 0px 50px 0px;
+}
+
+.cargo-europe__button {
+  position: relative;
+  z-index: 5;
+  margin: 0px 0px 50px 0px;
+}
+
+.cargo-europe__button:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.cargo-europe__button-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 55px;
+  padding: 0px 55px;
+  background-color: #C8A35F;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.cargo-europe__button-link:hover {
+  background-color: #ebc889;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cargo-europe__variety {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 5;
+}
+
+.cargo-europe__image {
+  margin: 0px 115px 0px 0px;
+}
+
+.cargo-europe__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cargo-europe__next span {
+  background: url("../img/icons/arrow.svg") right no-repeat;
+  padding: 0px 100px 0px 0px;
+}
+
+.cargo-europe__next:hover {
+  text-decoration: underline;
+}
+
+.cargo-europe__back span {
+  background: url("../img/icons/arrow2.svg") left no-repeat;
+  padding: 0px 0px 0px 100px;
+}
+
+.cargo-europe__back:hover {
+  text-decoration: underline;
+}
+
+.services {
+  padding: 120px 0px;
+}
+
+.services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services__subtitle {
+  margin: 0px 0px 60px 0px;
+}
+
+.services__items {
+  margin: 0px -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding: 0px 1px;
+}
+
+.services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 43px 60px;
+  background-color: #393F47;
+  margin: 0px 0px 1px 0px;
+}
+
+.services__item:hover {
+  background-color: #C8A35F;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.services__icon {
+  margin: 0px 0px 43px 0px;
+}
+
+.services__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.company {
+  padding: 0px 0px 120px 0px;
+}
+
+.company__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.company__content::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 31%;
+  width: 410px;
+  height: 482px;
+  background-color: #393F47;
+  z-index: 2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.company__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 5;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45.625%;
+          flex: 0 0 45.625%;
+}
+
+.company__subtitle {
+  margin: 0px 0px 30px 0px;
+}
+
+.company__text {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  max-width: 445px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 161px;
+  background-color: #C8A35F;
+}
+
+.footer__container {
+  min-width: 1120px;
+}
+
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50.44643%;
+          flex: 0 1 50.44643%;
+}
+
+.footer__logo {
+  margin: 0px 30px 0px 0px;
+}
+
+.footer__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__street {
+  color: #F2F2F2;
+  line-height: 16px;
+  margin: 0px 0px 8px 0px;
+}
+
+.footer__street:hover {
+  opacity: 0.5;
+}
+
+.footer__email {
+  color: #2F343A;
+  line-height: 16px;
+}
+
+.footer__email:hover {
+  text-decoration: underline;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 0px 0px 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50.44643%;
+          flex: 0 1 50.44643%;
+}
+
+.footer__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__number {
+  color: #F2F2F2;
+  line-height: 16px;
+  margin: 0px 0px 10px 0px;
+}
+
+.footer__number:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.footer__number:hover {
+  opacity: 0.5;
+}
+
+.footer__develop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer__develop-link {
+  color: #2F343A;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+/* -------------- */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2F343A;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg video,
+._ibg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+._container {
+  max-width: 1120px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.link {
+  color: #ffffff;
+}
+
+.subtite {
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  padding: 40px 0px 0px 0px;
+  z-index: 5;
+}
+
+.subtite::before {
+  content: "";
+  border-top: 6px solid #C8A35F;
+  width: 90px;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  z-index: 5;
+  position: relative;
+}
+
+.arrows {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #C8A35F;
+}
+
+.map__content img {
+  width: 100%;
+}
+
+.info {
+  position: relative;
+  z-index: 8;
+}
+
+.info__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  background-color: #ffffff;
+  padding: 18px 53.8px;
+  border: 1px solid #C8A35F;
+  text-align: center;
+}
+
+.info__column_big {
+  padding: 18px 44.1px;
+}
+
+.info__column_bigbig {
+  padding: 18px 35.2px;
+  font-size: 56px;
+}
+
+.info__item {
+  color: #2F343A;
+}
+
+.info__numbers {
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 700;
+}
+
+.info__numbers_big {
+  font-size: 55px;
+  line-height: 68px;
+}
+
+.info__ownership {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0px 0px 15px 0px;
+}
+
+.info__countries {
+  font-size: 12px;
+  line-height: 14px;
+  min-width: 91px;
+}
+
+@media (max-width: 1124px) {
+  .company__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .company__about {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .services__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__top-column {
+    min-height: 40px;
+  }
+
+  .header__bottom-column {
+    min-height: 80px;
+  }
+
+  .header__logo img {
+    padding: 0px 20px 0px 0px;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .header__list li {
+    margin: 0px 20px 0px 0px;
+  }
+
+  .home {
+    padding: 115px 0px 0px 0px;
+  }
+
+  .home__border {
+    padding: 30px 55px;
+    top: 100px;
+  }
+
+  .home__title {
+    font-size: 54px;
+    line-height: 65px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .cargo-europe__items {
+    min-height: 521px;
+  }
+
+  .cargo-europe__image {
+    margin: 0px 65px 0px 0px;
+  }
+
+  .cargo-europe__choice {
+    margin: 0px 20px 0px 0px;
+  }
+
+  .cargo-europe__next span {
+    padding: 0px 80px 0px 0px;
+  }
+
+  .cargo-europe__back span {
+    padding: 0px 0px 0px 80px;
+  }
+
+  .services {
+    padding: 90px 0px;
+  }
+
+  .services__subtitle {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .company {
+    padding: 0px 0px 90px 0px;
+  }
+
+  .company__content::before {
+    display: none;
+  }
+}
+
+@media (max-width: 830px) {
+  .cargo-europe__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 0px;
+  }
+
+  .cargo-europe__detailed {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .cargo-europe__subtitle {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .cargo-europe__text {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+  }
+
+  .cargo-europe__button:last-child {
+    margin: 0px 0px 50px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+
+  .subtite {
+    padding: 30px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__top-column {
+    min-height: 30px;
+  }
+
+  .header__bottom-column {
+    min-height: 65px;
+  }
+
+  .header__logo img {
+    padding: 0px 12px 0px 0px;
+    margin: 0px 12px 0px 0px;
+  }
+
+  .header__offices {
+    padding: 0px 0px 0px 28px;
+  }
+
+  .header__list li {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .home {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .home__item {
+    min-height: 400px;
+  }
+
+  .home__border {
+    padding: 20px 45px;
+  }
+
+  .home__title {
+    font-size: 44px;
+    line-height: 55px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .cargo-europe__image {
+    margin: 0px 30px 0px 0px;
+  }
+
+  .services {
+    padding: 60px 0px;
+  }
+
+  .services__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .services__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .info__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 590px) {
+  .home__border {
+    left: 65px;
+  }
+}
+
+._webp .home__item{ background: url(../img/home_bg.webp) 50% no-repeat; }
